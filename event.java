@@ -29,9 +29,10 @@ public class Main {
 
         int month = sc.nextInt();
 
+        // 1. Sort events by date
         events.sort(Comparator.comparing(e -> e.date));
 
-    
+        // Print sorted events
         for (Event e : events) {
             System.out.print(e.name + " ");
         }
